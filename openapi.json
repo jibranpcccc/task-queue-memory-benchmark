@@ -1,0 +1,30 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "QueueCost API",
+    "version": "1.0.0",
+    "description": "BullMQ vs Celery Memory Benchmarks, Temporal vs Inngest Pricing & Redis Streams",
+    "contact": {
+      "name": "QueueCost",
+      "url": "https://queuecost.pages.dev/"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://queuecost.pages.dev/",
+      "description": "Production Edge"
+    }
+  ],
+  "paths": {
+    "/api/v1/health": {
+      "get": {
+        "summary": "Healthcheck",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
